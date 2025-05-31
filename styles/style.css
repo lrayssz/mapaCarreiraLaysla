@@ -52,6 +52,10 @@
   color: var(--corTextoEscuro);
 }
 
+.resume-timeline-item-desc-heading {
+  margin-bottom: 15px;
+}
+
 .dev-icons {
   color: var(--corSecundaria);
 }
@@ -72,7 +76,6 @@
   background-color: var(--corSecundaria);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
-
 
 h3,
 h4 {
@@ -180,11 +183,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  background-color: var(--corSecundaria);
+  background: linear-gradient(
+    100deg,
+    var(--corSecundaria),
+    var(--corPrincipal)
+  );
   color: var(--corTextoClaro);
   padding: 20px 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   font-size: 16px;
   font-weight: 500;
   opacity: 0;
@@ -196,7 +203,6 @@ body {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 }
-
 
 input,
 select,
